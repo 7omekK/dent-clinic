@@ -1,7 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Motivation
+My motivation to start the project was primarily to get an experience in newest version of next.js as a tool for building fullstack application (before considered Node.js). In my career, I was developing projects using Angular 1, Angular 7+, React or Lit, but React is the framework of my choise to grow futher as front-end developer.
+
+Also decided to design my app by following the tips from "Refactoring UI" book by tialwindcss creators. I would like my app to be designed in very modern way and be accessible (semantic HTML and ARIA).
 
 ## Getting Started
-
 First, run the development server:
 
 ```bash
