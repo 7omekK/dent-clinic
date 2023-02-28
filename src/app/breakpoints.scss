@@ -1,0 +1,7 @@
+/* css variables cannot be used for media queries */
+/* smallest screen size supported - 360px */
+$breakpoint-xs: 480px;
+$breakpoint-sm: 600px;
+$breakpoint-md: 960px;
+$breakpoint-large: 1280px;
+$breakpoint-xlarge: 1536px;

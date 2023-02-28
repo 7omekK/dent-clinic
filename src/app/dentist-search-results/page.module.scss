@@ -1,0 +1,46 @@
+@import '@/app/breakpoints.scss';
+
+.container {
+    margin: var(--spacing-16px);
+}
+
+.h1 {
+    font-size: var(--h3-font-size);
+    line-height: var(--h3-line-height);
+}
+
+.dentist-search-reasults-wrapper {
+    margin-top: var(--spacing-12px);
+}
+
+@media (min-width: $breakpoint-xs) {
+    .container {
+        margin: var(--spacing-32px);
+    }
+
+    .header {
+        margin-top: var(--spacing-16px);
+    }
+}
+
+@media (min-width: $breakpoint-sm) {
+    .container {
+        margin: var(--spacing-32px) auto 0;
+        width: var(--spacing-512px);
+    }
+
+    .dentist-search-reasults-wrapper {
+        margin-top: var(--spacing-20px);
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    .container {
+        margin: var(--spacing-48px) auto 0;
+        width: var(--spacing-640px);
+    }
+
+    .dentist-search-reasults-wrapper {
+        margin-top: var(--spacing-24px);
+    }
+}

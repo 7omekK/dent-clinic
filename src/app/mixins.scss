@@ -1,0 +1,14 @@
+@mixin box-margins-reset {
+    margin: 0;
+    /* padding is also called internal margin */
+    padding: 0;
+}
+
+@mixin list-reset {
+    @include box-margins-reset;
+    list-style: none;
+
+    & > li {
+        @include box-margins-reset;
+    }
+}

@@ -1,0 +1,88 @@
+@import '@/app/breakpoints.scss';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-32px) var(--spacing-24px);
+    width: 100%;
+    border: var(--border-1px) solid black;
+    border-radius: var(--border-radius-8px);
+}
+
+.dentist-card-picture-container {
+    /* position: relative is required to be set on parent element of nextjs Image component with fill prop set to true */ 
+    position: relative;
+    width: var(--picture-xs-width);
+    height: calc(var(--picture-xs-width) * var(--4-of-5-ratio-width-to-height-multiplicator));
+}
+
+.dentist-card-content {
+    margin-top: var(--spacing-20px);
+    text-align: center;
+}
+
+.dentist-name {
+    font-size: var(--h5-font-size);
+    line-height: var(--h5-line-height);
+    font-weight: bold;
+}
+
+.dentist-rating-container {
+    margin-top: var(--spacing-12px);
+}
+
+.dentist-bio {
+    margin-top: var(--spacing-12px);
+}
+
+@media (min-width: $breakpoint-xs) {
+    .dentist-card-picture-container {
+        width: var(--picture-sm-width);
+        height: calc(var(--picture-sm-width) * var(--4-of-5-ratio-width-to-height-multiplicator));
+    }
+
+    .dentist-name {
+        font-size: var(--h4-font-size);
+        line-height: var(--h4-line-height);
+    }
+}
+
+@media (min-width: $breakpoint-sm) {
+    .main {
+        flex-direction: row;
+        align-items: stretch;
+        padding: 0;
+        width: 100%;
+        height: calc(var(--picture-sm-width) * var(--4-of-5-ratio-width-to-height-multiplicator));
+    }
+
+    .dentist-card-picture-container {
+        flex: 0 0 auto;
+        width: var(--picture-sm-width);
+        height: 100%;
+    }
+
+    .dentist-card-picture {
+        border-radius: var(--border-radius-6px) 0 0 var(--border-radius-6px);
+    }
+ 
+    .dentist-card-content {
+        flex: 1 1 auto;
+        padding: var(--spacing-12px);
+    }
+
+    .dentist-card-content {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    .dentist-card-content {
+        flex: 1 1 auto;
+        padding: var(--spacing-20px);
+    }
+}

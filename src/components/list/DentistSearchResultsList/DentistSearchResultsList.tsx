@@ -1,9 +1,11 @@
-import DentistCard, { DentistCardImageProps } from '@/components/card/DentistCard';
-import Rating from '@/components/input/Rating';
-import DentistImage from '@/components/media/PersonImage';
+import DentistCard, { DentistCardImageProps } from '@/components/card/DentistCard/DentistCard';
+import Rating from '@/components/input/Rating/Rating';
+import PersonImage from '@/components/media/PersonImage';
 
 import JohnDoe from 'public/person/dentists/JohnDoe.jpeg';
 import JaneDoe from 'public/person/dentists/JaneDoe.jpeg';
+
+import styles from './dentist-search-results-list.module.scss';
 
 const DENTIST_RATING_ARIA_LABEL = 'Dentist rating';
 
@@ -30,22 +32,20 @@ const dentists = [
     }
 ];
 
-export default function DentistSearchResults(): JSX.Element {
+export default function DentistSearchResultsList(): JSX.Element {
     return (
-        <ul>
+        <ul className={styles.list}>
             {
                 dentists.map(dentist => (
-                    <li key={dentist.id}>
+                    <li className={styles['list-item']} key={dentist.id}>
                         <DentistCard
                             name={dentist.name}
                             bio={dentist.bio}
                             image={(props: DentistCardImageProps) => (
-                                <DentistImage
+                                <PersonImage
                                     {...props}
                                     src={dentist.image}
                                     alt={`${dentist.name} image`}
-                                    width={80}
-                                    height={100}
                                 />
                             )}
                             rating={

@@ -1,0 +1,144 @@
+@import 'normalize.css';
+
+* {
+  box-sizing: border-box;
+}
+
+/* size (private) variables - can only be used whithin this file */
+$size-4px: 0.25rem;
+$size-6px: 0.375rem;
+$size-8px: 0.5rem;
+$size-12px: 0.75rem;
+$size-14px: 0.875rem;
+$size-16px: 1rem;
+$size-18px: 1.125rem;
+$size-20px: 1.25rem;
+$size-24px: 1.5rem;
+$size-30px: 1.875rem;
+$size-32px: 2rem;
+$size-36px: 2.25rem;
+$size-48px: 3rem;
+$size-64px: 4rem;
+$size-96px: 6rem;
+$size-128px: 8rem;
+$size-160px: 10rem;
+$size-192px: 12rem;
+$size-256px: 16rem;
+$size-384px: 24rem;
+$size-512px: 32rem;
+$size-640px: 40rem;
+$size-768px: 64rem;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+    “Segoe UI”, “Roboto”, “Oxygen”,
+    “Ubuntu”, “Cantarell”, “Fira Sans”,
+    “Droid Sans”, “Helvetica Neue”, sans-serif;
+
+  --spacing-4px: #{$size-4px};
+  --spacing-8px: #{$size-8px};
+  --spacing-12px: #{$size-12px};
+  --spacing-16px: #{$size-16px};
+  --spacing-20px: #{$size-20px};
+  --spacing-24px: #{$size-24px};
+  --spacing-32px: #{$size-32px};
+  --spacing-48px: #{$size-48px};
+  --spacing-64px: #{$size-64px};
+  --spacing-96px: #{$size-96px};
+  --spacing-128px: #{$size-128px};
+  --spacing-192px: #{$size-192px};
+  --spacing-256px: #{$size-256px};
+  --spacing-384px: #{$size-384px};
+  --spacing-512px: #{$size-512px};
+  --spacing-640px: #{$size-640px};
+  --spacing-768px: #{$size-768px};
+
+  --font-size-14px: #{$size-14px};
+  --font-size-16px: #{$size-16px};
+  --font-size-18px: #{$size-18px};
+  --font-size-20px: #{$size-20px};
+  --font-size-24px: #{$size-24px};
+  --font-size-30px: #{$size-30px};
+  --font-size-36px: #{$size-36px};
+
+  --h1-font-size: var(--font-size-36px);
+  --h1-line-height: #{$size-48px};
+
+  --h2-font-size: var(--font-size-30px);
+  --h2-line-height: #{$size-36px};
+
+  --h3-font-size: var(--font-size-24px);
+  --h3-line-height: #{$size-30px};
+
+  --h4-font-size: var(--font-size-20px);
+  --h4-line-height: #{$size-24px};
+
+  --h5-font-size: var(--font-size-18px);
+  --h5-line-height: #{$size-20px};
+
+  --h6-font-size: var(--font-size-16px);
+  --h6-line-height: #{$size-18px};
+
+  --p-font-size: var(--font-size-16px);
+  --p-line-height: #{$size-18px};
+
+  --small-font-size: var(--font-size-14px);
+  --small-line-height: #{$size-16px};
+
+  --border-1px: 1px;
+
+  --border-radius-4px: #{$size-4px};
+  --border-radius-6px: #{$size-6px};
+  --border-radius-8px: #{$size-8px};
+
+  --picture-2xs-width: #{$size-64px};
+  --picture-xs-width: #{$size-96px};
+  --picture-sm-width: #{$size-128px};
+
+  --4-of-5-ratio-width-to-height-multiplicator: 1.25;
+}
+
+h1, h2, h3, h4, h5, h6, p, small {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+  line-height: var(--h5-line-height);
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+  line-height: var(--h6-line-height);
+}
+
+p {
+  font-size: var(--p-font-size);
+  line-height: var(--p-line-height);
+}
+
+small {
+  font-size: var(--small-font-size);
+  line-height: var(--small-line-height);
+}

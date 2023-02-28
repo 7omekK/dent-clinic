@@ -1,0 +1,22 @@
+@import '@/app/mixins.scss';
+@import '@/app/breakpoints.scss';
+
+.list {
+    @include list-reset;
+}
+
+.list > .list-item + .list-item {
+    margin-top: var(--spacing-16px);
+}
+
+@media (min-width: $breakpoint-sm) {
+    .list > .list-item + .list-item {
+        margin-top: var(--spacing-20px);
+    }
+}
+
+@media (min-width: $breakpoint-md) {
+    .list > .list-item + .list-item {
+        margin-top: var(--spacing-24px);
+    }
+}
